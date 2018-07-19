@@ -5,6 +5,7 @@ config = {
   password: process.env.password,
   database: process.env.database,
   host: process.env.host,
+  port: process.env.PORT,
   dialect: "mysql"
 };
 
