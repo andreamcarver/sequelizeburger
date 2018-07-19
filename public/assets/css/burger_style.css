@@ -1,0 +1,17 @@
+#body {
+    background-color:yellow
+}
+
+#undevour {
+    color: black;
+    align-content: left
+}
+
+#devour {
+    color: black;
+    align-content: right
+}
+
+#burgerPic {
+    align-content: center
+}

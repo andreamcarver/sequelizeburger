@@ -1,0 +1,53 @@
+
+<div id="burgerInput">
+    <form class="create-form">
+        <p>What kind of hamburger would you like?</p>
+        <p><input type="text" id="brg"></p>
+        <p><input type="submit"></p>
+    </form>
+</div>
+
+<div id="noDevour">
+    <h2>Burgers Ready to Eat!</h2>
+<ul>
+  {{#each burgers}}
+    {{#unless devour}}
+      <li>
+        {{burger_name}}
+        <button class="devour" data-id="{{id}}">
+            Devour It!
+        </button>
+      </li>
+
+    {{/unless}}
+  {{/each}}
+</ul>
+</div>
+
+<div id="devour">
+    <h2>Burgers Eaten!</h2>
+    <ul>
+    {{#each burgers}}
+        {{#if devour}}
+        <li>
+            {{burger_name}}
+       
+        </li>
+
+        {{/if}}
+    {{/each}}
+    </ul>
+
+
+</div>
+
+
+
+
+
+{{!-- 
+<ul>
+    {{#each }}
+
+
+</ul> --}}
